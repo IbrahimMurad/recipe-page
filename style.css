@@ -1,0 +1,162 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  box-sizing: border-box;
+  font-family: "Outfit", serif;
+}
+
+:root {
+  --stone-100-color: hsl(30, 54%, 90%);
+  --stone-150-color: hsl(30, 18%, 87%);
+  --stone-600-color: hsl(30, 10%, 34%);
+  --stone-900-color: hsl(24, 5%, 18%);
+  --brown-800-color: hsl(14, 45%, 36%);
+  --rose-800-color: hsl(332, 51%, 32%);
+  --rose-50-color: hsl(330, 100%, 98%);
+}
+
+main {
+  min-height: 100vh;
+  background-color: var(--stone-100-color);
+  display: grid;
+  place-items: center;
+}
+
+p {
+  line-height: 1.5rem;
+}
+
+section {
+  margin: 2rem 0;
+  width: 100%;
+}
+
+img {
+  border-radius: 10px;
+  max-width: 100%;
+  align-self: center;
+}
+
+.recipe-page {
+  max-width: 45rem;
+  min-width: 23rem;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  background-color: white;
+  border-radius: 10px;
+  margin: 5rem auto;
+  padding-top: 1.5rem;
+}
+
+@media (max-width: 375px) {
+  .recipe-page {
+    margin: 0;
+    padding-top: 0;
+  }
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 400;
+  font-family: "Young Serif", serif;
+}
+
+header > h2 {
+  font-size: 1.6rem;
+  color: var(--brown-800-color);
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+}
+
+.content {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+
+.description {
+  margin: 1rem 0;
+}
+
+.preparation-time {
+  background-color: var(--rose-50-color);
+  border-radius: 10px;
+  padding: 1.5rem;
+}
+
+.preparation-time > h3 {
+  font-size: 1.2rem;
+  color: var(--rose-800-color);
+}
+
+.ingredients, .instructions {
+  border-bottom: 1px solid var(--stone-150-color);
+}
+
+/* lists stylling */
+
+ol {
+  padding: 1rem;
+}
+
+ol > ::marker {
+  color: var(--brown-800-color);
+  font-weight: 700;
+}
+
+ul > li {
+  margin: 1rem 0;
+  display: flex;
+  align-items: center;
+}
+
+ul > li::before {
+  content: "";
+  display: block;
+  border-radius: 50%;
+  min-width: 5px;
+  height: 5px;
+  background-color: black;
+}
+
+li {
+  margin: 1rem 0;
+}
+
+article > p {
+  margin: 1rem 0;
+}
+
+li > p {
+  margin-left: 1rem;
+}
+
+/* Table stylling */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+tr+tr {
+  border-top: 1px solid var(--stone-150-color);
+}
+
+td {
+  padding: 1rem 0;
+}
+
+tr>td {
+  padding-left: 2rem;
+}
+
+td+td {
+  color: var(--brown-800-color);
+  font-weight: 700;
+}
